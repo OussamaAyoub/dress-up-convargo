@@ -11,29 +11,27 @@
   </head>
   <body>
 
-  <div id="main">
     <div id="trucker">
         <h2>TRUCKER</h2>
-      <div>
-        <input class="name" type="text" placeholder="Trucker name"/>
+      <div>Trucker name :
+        <input class="name" type="text"/>
       </div></br>
-    <div>
-        <input class="price-by-km" type="number" placeholder="Price by km"/>
-      </div></br>
-      <div>
-        <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+    <div>Price by km :
+        <input class="price-by-km" type="number"> km</div></br>
+      <div>Price by m3 :
+          <input class="price-by-cubic" type="number"> m3</div>
       </div></br>
     </div>
     <div id="shipper">
         <h2 >SHIPMENT</h2>
-      <div >
-      <input class="name" type="text" placeholder="Shipper name"/></br>
+      <div >Shipper Name :
+      <input class="name" type="text"/></br>
       </div></br>
-      <div>
-      <input class="distance" type="number" placeholder="Distance in km"/></br>
+      <div>Distance :
+      <input class="distance" type="number" placeholder/> km</br>
       </div></br>
-      <div>
-      <input class="volume" type="number" placeholder="Volume in m3"/></br>
+      <div>&nbsp;&nbsp;Volume :
+      <input class="volume" type="number"/> m3</br>
       </div></br>
       <div>
         Deductible Option :
@@ -43,9 +41,11 @@
 
   <div id="buttonHolder">
   <button  type="button" id="compute" class="btn btn-info">Compute</button>
-  </div>
-  </div>
-  <div id="actors"></div>
+  </div></br></br>
+    <div id="tableHolder">
+        <table id="actors"></table>
+    </div>
+
   <script src="convargo.js"></script>
   <script src="index.js"></script>
   </body>

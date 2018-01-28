@@ -4,20 +4,24 @@
 (() => {
   const render = (actors) => {
     const fragment = document.createDocumentFragment();
-    const div = document.createElement('div');
+    const div = document.createElement('table');
     const template = actors.map(actor => {
       return `
-        <div class="actor">
-          <span>${actor.who}</span>
-          <span>${actor.type}</span>
-          <span>${actor.amount}</span>
-        </div>
+      <tr>
+          <td>${actor.who}</td>
+          <td>${actor.type}</td>
+          <td>${actor.amount}</td>
+      </tr>
       `;
     }).join('');
-
-    div.innerHTML = template;
+    div.innerHTML=`<tr>
+                              <th>Who</th>
+                              <th>Type</th>
+                              <th>Amount</th>
+                          </tr>`;
+    div.innerHTML += template;
     fragment.appendChild(div);
-    document.querySelector('#actors').innerHTML = '';
+    document.querySelector('#actors').innerHTML='';
     document.querySelector('#actors').appendChild(fragment);
   };
 

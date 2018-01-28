@@ -15,6 +15,9 @@ background:white;
     margin-left:auto;
     margin-right:auto;
 }
+#tableHolder{
+    text-align:center;
+}
 #shipper{
     text-align:center;
 }
@@ -24,6 +27,38 @@ background:white;
 #buttonHolder{
     text-align:center;
 }
-#actors{
-text-align:center;
+#actors {
+    margin-left:auto;
+    margin-right:auto;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+#actors td, #actors th {
+
+    border: 1px solid #ddd;
+    padding: 8px;
+    width:200px;
+}
+#actors tr{background-color: #f2f2f2;}
+#actors tr:hover {background-color: #ddd;}
+
+#actors th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+}
+.distance{
+width:76px;
+}
+.volume{
+width:75px;
+}
+.price-by-cubic{
+width:75px;
+}
+.price-by-km{
+width:75px;
 }
