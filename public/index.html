@@ -11,30 +11,42 @@
   </head>
   <body>
 
-  <div class="main">
+  <div id="main">
     <div id="trucker">
         <h2>TRUCKER</h2>
-      <div style="text-align:center">
+      <div>
         <input class="name" type="text" placeholder="Trucker name"/>
       </div></br>
-    <div style="text-align:center">
+    <div>
         <input class="price-by-km" type="number" placeholder="Price by km"/>
       </div></br>
-      <div style="text-align:center">
+      <div>
         <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
       </div></br>
     </div>
     <div id="shipper">
-        <h2>SHIPMENT</h2>
+        <h2 >SHIPMENT</h2>
+      <div >
       <input class="name" type="text" placeholder="Shipper name"/></br>
+      </div></br>
+      <div>
       <input class="distance" type="number" placeholder="Distance in km"/></br>
+      </div></br>
+      <div>
       <input class="volume" type="number" placeholder="Volume in m3"/></br>
+      </div></br>
+      <div>
+        Deductible Option :
       <input class="option" type="checkbox" placeholder="Deductible option"/></br>
+      </div></br>
     </div>
+
+  <div id="buttonHolder">
+  <button  type="button" id="compute" class="btn btn-info">Compute</button>
   </div>
-  <button type="button" id="compute" class="btn btn-info">Compute</button>
-    <div id="actors"></div>
-    <script src="convargo.js"></script>
-    <script src="index.js"></script>
+  </div>
+  <div id="actors"></div>
+  <script src="convargo.js"></script>
+  <script src="index.js"></script>
   </body>
 </html>

@@ -1,14 +1,29 @@
 body
 {
 background:#29ABE3;
+
 }
 
-.main
+#main
 {
+text-align:center;
 background:white;
 }
 
-h2
-{
-text-alignment:center;
+#compute{
+    width:125px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#shipper{
+    text-align:center;
+}
+#trucker{
+     text-align:center;
+ }
+#buttonHolder{
+    text-align:center;
+}
+#actors{
+text-align:center;
 }
